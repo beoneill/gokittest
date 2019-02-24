@@ -1,0 +1,12 @@
+version: "2"
+services:
+  flights:
+    build:
+      context: .
+      dockerfile: flights/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/github.com/beoneill/gokittest
+    container_name: flights
+    ports:
+    - 8800:8082

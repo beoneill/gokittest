@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package pb;
+
+
+
+//The Flights service definition.
+service Flights {
+ rpc Health (HealthRequest) returns (HealthReply);
+}
+
+message HealthRequest {}
+
+message HealthReply {}
+
